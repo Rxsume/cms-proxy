@@ -25,7 +25,10 @@ const ROUTES = {
  "c20": "https://api.huosuapi.cc/api.php/provide/vod/",
  "c21": "https://api.heiapi.cc/api.php/provide/vod/",
  "p01": "https://jiexi.souavzyw.top/m3u8/?url=",
- "p02": "https://yutujx.com/?url="
+ "p02": "https://yutujx.com/?url=",
+ // 黄果 API 中转：/hg/api/playback/request -> https://huangguoai.com/api/playback/request
+ // 供映匣 T3 用：手机直连 huangguoai.com 的 API 会 404（疑似分流/DNS），走 Worker 中转可绕过。
+ "hg": "https://huangguoai.com"
 };
 
 export default {
