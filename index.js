@@ -28,7 +28,10 @@ const ROUTES = {
  "p02": "https://yutujx.com/?url=",
  // 黄果 API 中转：/hg/api/playback/request -> https://huangguoai.com/api/playback/request
  // 供映匣 T3 用：手机直连 huangguoai.com 的 API 会 404（疑似分流/DNS），走 Worker 中转可绕过。
- "hg": "https://huangguoai.com"
+ "hg": "https://huangguoai.com",
+ // 51吃瓜中转：/cg/category/mrds/ -> https://boom.ennpaywf.cc/category/mrds/
+ // 供 FongMi 合并爬虫（huangguo_51chigua.py）用：与黄果同走 CF 线路。
+ "cg": "https://boom.ennpaywf.cc"
 };
 
 export default {
